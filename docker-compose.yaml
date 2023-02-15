@@ -9,6 +9,7 @@ services:
     working_dir: /application
     volumes:
       - .:/application
+    #ruindos: chown -R 1000:1000 database/ ; chown -R 1000:1000 app/Rocketti/
   nginx:
     image: nginx:alpine
     volumes:
