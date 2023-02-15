@@ -8,6 +8,15 @@ Farei um diário de bordo para colocar pensamentos, desenhos, problemas e soluç
 
 [Diário de bordo (Notion)](https://buttercup-tuck-793.notion.site/Escola-Mini-Donuts-ee41245e2a594c2a98a3c78d89625942)
 
+## Objetivo
+
+Projeto é para qualquer instituição que necessite de um sistema de controle de alunos, notas e pagamentos.
+
+## Regras de Negócio
+
+- Se o aluno for menor que 18 anos deverá ter um responsável atrelado.
+- Se o aluno tiver nota menor que valor definido (valor_media), ele deverá ser considerado reprovado.
+
 ## Tecnologias e Ferramentas
 
 - Laravel
@@ -15,6 +24,7 @@ Farei um diário de bordo para colocar pensamentos, desenhos, problemas e soluç
 - Docker
 - Redis
 - Postman
+- Draw.io
 
 ## Dúvidas, Sugestões e PR
 
