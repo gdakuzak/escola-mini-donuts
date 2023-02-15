@@ -18,6 +18,7 @@ Projeto é para qualquer instituição que necessite de um sistema de controle d
 
 - Se o aluno for menor que 18 anos deverá ter um responsável atrelado.
 - Se o aluno tiver nota menor que valor definido (valor_media), ele deverá ser considerado reprovado.
+- Única relação entre pagamentos e aluno, será o aluno_id no pagamento. Valores e descrição feitas a partir de processamentos.
 
 ## Tecnologias e Ferramentas
 
@@ -28,6 +29,10 @@ Projeto é para qualquer instituição que necessite de um sistema de controle d
 - Postman
 - Draw.io
 - Postgres
+
+## Observações
+
+- Desenhos estão em portugues, porém a criação faço em inglês. (no futuro, estará tudo em inglês)
 
 ## Dúvidas, Sugestões e PR
 
