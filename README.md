@@ -12,6 +12,8 @@ Farei um diário de bordo para colocar pensamentos, desenhos, problemas e soluç
 
 Projeto é para qualquer instituição que necessite de um sistema de controle de alunos, notas e pagamentos.
 
+- API (foco desse projeto)
+- Front-end (ainda estou pensando no assunto)
 ## Regras de Negócio
 
 - Se o aluno for menor que 18 anos deverá ter um responsável atrelado.
@@ -25,6 +27,7 @@ Projeto é para qualquer instituição que necessite de um sistema de controle d
 - Redis
 - Postman
 - Draw.io
+- Postgres
 
 ## Dúvidas, Sugestões e PR
 
