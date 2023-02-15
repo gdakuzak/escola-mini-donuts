@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+  php-fpm: &default
+    image: escolaminidonuts:latest
+    build:
+      context: .
+      target: base
+    user: "root:root"
+    working_dir: /application
+    volumes:
+      - .:/application
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - .:/application
+      - ./.docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 8000:80
+    depends_on:
+      - php-fpm
+      - postgres
+      - redis
+  postgres:
+    image: postgis/postgis:13-3.3-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres:/data/postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgrees
+      - PGDATA=/data/postgres
+  redis:
+    image: redis:alpine
+    ports:
+      - 6379:6379
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+
+volumes:
+  postgres: {}
+  redis: {}
